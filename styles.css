@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #3a0ca3 0%, #7209b7 100%); /* Darker and more vivid blue to purple gradient */
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(135deg, #7f00ff 0%, #e100ff 80%); /* More intense purple to violet gradient */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px; /* Fixed width for centering */
+    height: 400px; /* Fixed height for centering */
+}
+
+h1 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive; /* Subtle cursive font */
+}
+
+.dice {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Required for dot positioning */
+    margin-bottom: 20px; /* Spacing between dice and button */
+}
+
+.dice div.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+}
+
+button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ff6f61 0%, #ffcc00 100%); /* Red to orange gradient */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #e55d5d 0%, #f7b732 100%); /* Darker red to orange gradient on hover */
+}
+
+button.clicked {
+    transform: scale(0.95); /* Button shrink effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adjusted shadow on click */
+}
